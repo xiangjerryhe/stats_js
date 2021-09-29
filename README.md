@@ -8,3 +8,10 @@ Google released tensorflow.js and after 2 years it looks like they're sticking t
 * Support Vector Machines
 * Survival Analysis
 * Gaussian Mixture Models
+
+
+Technical Analysis indicators
+* McClellan Summation Index
+* 
+
+Tested on Google Chrome and Microsoft Edge browsers.
