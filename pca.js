@@ -8,9 +8,9 @@ class PCA {
                          batchInputShape:[null, orig_dim],
                          kernelInitializer:"randomNormal",
                          biasInitializer:"zeros",
-                         activation: 'relu',
+                         activation: 'sigmoid',
                        })
-       this.decoder = tf.layers.dense({units:orig_dim, activation:'relu'})
+       this.decoder = tf.layers.dense({units:orig_dim, activation:'sigmoid'})
        this.model = tf.sequential({
              layers:[ this.encoder ,  this.decoder] })
         this.model.compile({optimizer:'sgd', loss:'meanSquaredError'})
